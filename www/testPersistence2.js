@@ -64,6 +64,9 @@ data: d
 }).done(function(msg){ 
 Update_Data(d._id, "OK"); 
 $(".sync_"+d._id).html("OK");
+}).fail(function(jqXHR, textStatus) {
+//alert(d._id+": "+JSON.stringify(jqXHR));
+$(".sync_"+d._id).append(" ("+JSON.stringify(jqXHR)+")"); 
 });
 }
 });
