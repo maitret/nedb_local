@@ -5,8 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="msapplication-tap-highlight" content="no" />
 <meta name="format-detection" content="telephone=no" />
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-<meta http-equiv="Content-Security-Policy" content="default-src *" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> --> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
 
 <title>NeDB</title> 
@@ -21,15 +20,20 @@
 <a href="index.html">Recargar</a>
 <div id="res">...</div>
 <hr>
-<div class="res_sults">res_sults: </div>
-<hr>
 <div class="res_sults_2">res_sults_2: </div>
+
+<table id="table_db" border="1">
+
+</table>
 
 <script>
 jQuery(document).ready(function($){
 $("#res").html(Date.now());
 });
 </script>
+
+<a href="javascript:;" onclick="Update_All();">Actualizar Todo</a>
+ - <a href="javascript:;" onclick="Delete_All();">Borrar todo</a>
 
 </body>
 </html>
