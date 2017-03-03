@@ -39,7 +39,7 @@ $(".res_sults").append(JSON.stringify(d)+"<br>");
 }); */ 
 
 //db.find({}, function (err, docs){
-db.find({  }).sort({ fecha: 1 }).exec(function (err, docs) {
+db.find({  }).sort({ fecha: -1 }).exec(function (err, docs) {
 console.log("docs.length 2: "+docs.length);
 docs.forEach(function(d){
 var table_db = '<tr>'+
@@ -53,7 +53,8 @@ $("#table_db").append(table_db);
 });
 
 function Update_All(){
-db.find({}, function (err, docs){
+//db.find({}, function (err, docs){
+db.find({  }).sort({ fecha: -1 }).exec(function (err, docs) {
 docs.forEach(function(d){
 if(d.sync != "OK"){
 $.ajax({
