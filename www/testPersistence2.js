@@ -44,7 +44,6 @@ db.find({}, function (err, docs){
 console.log("docs.length 2: "+docs.length);
 docs.forEach(function(d){
 $(".res_sults_2").append(JSON.stringify(d)+"<br>"); 
-
 $.ajax({
 method: "POST",
 url: "https://www.enatural.tk/apps/test/get_data.php",
