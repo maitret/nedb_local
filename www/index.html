@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="format-detection" content="telephone=no" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+<!-- <meta http-equiv="Content-Security-Policy" content="default-src *" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+
+<title>NeDB</title> 
+<link rel="stylesheet" href="mocha.css">
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="nedb.js"></script>
+<script src="testPersistence2.js"></script>
+</head>
+<body>
+<a href="index.html">Recargar</a>
+<div id="res">...</div>
+<hr>
+<div class="res_sults">res_sults: </div>
+<hr>
+<div class="res_sults_2">res_sults_2: </div>
+
+<script>
+jQuery(document).ready(function($){
+$("#res").html(Date.now());
+});
+</script>
+
+</body>
+</html>
